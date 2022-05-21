@@ -1,0 +1,14 @@
+<svg id="Group_2" data-name="Group 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.092" y1="0.908" x2="0.908" y2="0.092" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffc107"/>
+      <stop offset="0.507" stop-color="#f44336"/>
+      <stop offset="0.99" stop-color="#9c27b0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.146" y1="0.854" x2="0.854" y2="0.146" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="0.146" y1="0.854" x2="0.854" y2="0.146" xlink:href="#linear-gradient"/>
+  </defs>
+  <path id="Path_4" data-name="Path 4" d="M11,0H5A5,5,0,0,0,0,5v6a5,5,0,0,0,5,5h6a5,5,0,0,0,5-5V5A5,5,0,0,0,11,0Zm3.5,11A3.5,3.5,0,0,1,11,14.5H5A3.5,3.5,0,0,1,1.5,11V5A3.5,3.5,0,0,1,5,1.5h6A3.5,3.5,0,0,1,14.5,5Z" fill="url(#linear-gradient)"/>
+  <path id="Path_5" data-name="Path 5" d="M8,4a4,4,0,1,0,4,4A4,4,0,0,0,8,4Zm0,6.5A2.5,2.5,0,1,1,10.5,8,2.5,2.5,0,0,1,8,10.5Z" fill="url(#linear-gradient-2)"/>
+  <circle id="Ellipse_1" data-name="Ellipse 1" cx="0.533" cy="0.533" r="0.533" transform="translate(11.767 3.167)" fill="url(#linear-gradient-3)"/>
+</svg>
