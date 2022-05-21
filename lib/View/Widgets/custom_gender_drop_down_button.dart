@@ -34,62 +34,70 @@ class _CustomGenderDropDownButtonState extends State<CustomGenderDropDownButton>
         SizedBox(
           width: SizeConfig.screenWidth / 3,
           height: SizeConfig.screenHeight / 10.431,
-          child: DropdownButtonFormField<int>(
-            icon: Padding(
-              padding: EdgeInsets.only(right: SizeConfig.screenWidth / 96),
-              child: Icon(Icons.keyboard_arrow_down, color: Colors.black, size: SizeConfig.screenWidth / 16,),
-            ),
-            decoration: InputDecoration(
-              hintText: 'Male',
-              hintStyle: TextStyle(
-                color: Colors.grey,
-                fontSize: 13.75 * SizeConfig.fontSizeScale,
-                fontWeight: FontWeight.w700,
+          child: Directionality(
+            textDirection: TextDirection.rtl,
+            child: DropdownButtonFormField<int>(
+              icon: Padding(
+                padding: EdgeInsets.only(right: SizeConfig.screenWidth / 96),
+                child: Icon(Icons.keyboard_arrow_down, color: Colors.black, size: SizeConfig.screenWidth / 16,),
               ),
-              contentPadding: EdgeInsets.symmetric(horizontal: SizeConfig.screenWidth / 26.667, vertical: SizeConfig.screenHeight / 37.547),
-              focusedBorder: OutlineInputBorder(
-                borderSide: BorderSide(color: Colors.grey.shade300, width: 1, style: BorderStyle.solid),
-                borderRadius: BorderRadius.all(Radius.circular(12)),
-              ),
-              disabledBorder:  OutlineInputBorder(
-                borderSide: BorderSide(color: Colors.grey.shade300, width: 1, style: BorderStyle.solid),
-                borderRadius: BorderRadius.all(Radius.circular(12)),
-              ),
-              enabledBorder: OutlineInputBorder(
-                borderSide: BorderSide(color: Colors.grey.shade300, width: 1, style: BorderStyle.solid),
-                borderRadius: BorderRadius.all(Radius.circular(12)),
-              ),
-            ),
-            value: selectedUserGender,
-            items: [
-              DropdownMenuItem(
-                value: 1,
-                child: Text(
-                  'Male',
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 12.5 * SizeConfig.fontSizeScale,
-                    fontWeight: FontWeight.w700,
-                  ),
+              decoration: InputDecoration(
+                hintText: 'ذكر',
+                hintStyle: TextStyle(
+                  color: Colors.grey,
+                  fontSize: 13.75 * SizeConfig.fontSizeScale,
+                  fontWeight: FontWeight.w700,
+                ),
+                contentPadding: EdgeInsets.symmetric(horizontal: SizeConfig.screenWidth / 26.667, vertical: SizeConfig.screenHeight / 37.547),
+                focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.grey.shade300, width: 1, style: BorderStyle.solid),
+                  borderRadius: BorderRadius.all(Radius.circular(12)),
+                ),
+                disabledBorder:  OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.grey.shade300, width: 1, style: BorderStyle.solid),
+                  borderRadius: BorderRadius.all(Radius.circular(12)),
+                ),
+                enabledBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.grey.shade300, width: 1, style: BorderStyle.solid),
+                  borderRadius: BorderRadius.all(Radius.circular(12)),
                 ),
               ),
-              DropdownMenuItem(
-                value: 2,
-                child: Text(
-                  'Female',
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 12.5 * SizeConfig.fontSizeScale,
-                    fontWeight: FontWeight.w700,
+              value: selectedUserGender,
+              items: [
+                DropdownMenuItem(
+                  value: 1,
+                  child: Center(
+                    child: Text(
+                      'ذكر',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 12.5 * SizeConfig.fontSizeScale,
+                        fontWeight: FontWeight.w700,
+                      ),
+                      //textAlign: TextAlign.end,
+                    ),
                   ),
                 ),
-              ),
-            ],
-            onChanged: (value) {
-              setState(() {
-                selectedUserGender = value;
-              });
-            },
+                DropdownMenuItem(
+                  value: 2,
+                  child: Center(
+                    child: Text(
+                      'أنثى',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 12.5 * SizeConfig.fontSizeScale,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+              onChanged: (value) {
+                setState(() {
+                  selectedUserGender = value;
+                });
+              },
+            ),
           ),
         ),
       ],
