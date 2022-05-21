@@ -269,7 +269,7 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
                     _currentDate = newdate;
                   },
                   maximumDate: DateTime(2050, 12, 30),
-                  minimumYear: 2010,
+                  minimumYear: 1960,
                   maximumYear: 2050,
                   minuteInterval: 1,
                   mode: CupertinoDatePickerMode.date,
