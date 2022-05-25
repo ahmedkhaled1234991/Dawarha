@@ -48,9 +48,9 @@ class CustomNumberPhoneTextField extends StatelessWidget {
             ),
           ),
         ),
-        SizedBox(width: SizeConfig.screenWidth / 16,),
+        SizedBox(width: SizeConfig.screenWidth / 20,),
         Text(
-          '20+',
+          '965+',
           style: TextStyle(
             color: Colors.black,
             fontSize: 15 * SizeConfig.fontSizeScale,
@@ -61,7 +61,7 @@ class CustomNumberPhoneTextField extends StatelessWidget {
         SizedBox(
           width: SizeConfig.screenWidth / 10.667,
           height: SizeConfig.screenHeight / 31.289,
-          child: Image.asset("assets/images/Egypt_flag.svg.webp", fit: BoxFit.cover,),
+          child: Image.asset("assets/images/Kuwait_flag_image.svg.png", fit: BoxFit.cover,),
         ),
       ],
     );
